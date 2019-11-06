@@ -12,6 +12,8 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author wlg
@@ -30,6 +32,7 @@ public class ExcelController {
             return null;
         }
         InputStream is = null;
+        List list = new ArrayList();
         for (MultipartFile mf : files) {
             try {
                 is  = mf.getInputStream();
