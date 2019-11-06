@@ -1,32 +1,23 @@
 package com.excel;
 
-import com.alibaba.fastjson.JSONObject;
-import jxl.Sheet;
-import jxl.Workbook;
-import jxl.read.biff.BiffException;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * Hello world!
- *
  */
 @SpringBootApplication
 public class App {
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 		/*App obj = new App();
 		// 此处为我创建Excel路径：E:/zhanhj/studysrc/jxl下
 		File file = new File("C:\\Users\\Administrator\\Desktop\\鹤壁烟草局财务对账工具\\data1.xls");
 		obj.readExcel(file);*/
-		SpringApplication.run(App.class,args);
-	}
+        SpringApplication.run(App.class, args);
+    }
 
-	// 去读Excel的方法readExcel，该方法的入口参数为一个File对象
-	public void readExcel(File file) {
+    // 去读Excel的方法readExcel，该方法的入口参数为一个File对象
+	/*public void readExcel(File file) {
 		try {
 			List<JSONObject> list = new ArrayList<JSONObject>();
 			// 创建输入流，读取Excel
@@ -58,6 +49,6 @@ public class App {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-	}
+	}*/
 
 }
