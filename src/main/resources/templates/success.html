@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr th:each="sf:${list}">
+        <td th:text="${sf.pzhs}"></td>
+        <td th:text="${sf.zy}"></td>
+        <td th:text="${sf.jf}"></td>
+        <td th:text="${sf.df}"></td>
+    </tr>
+</table>
+</body>
+</html>
